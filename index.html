@@ -1,0 +1,82 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+  <script src="./index.js"></script>
+  
+  <style>
+      
+      table, th, td {
+           border: 1px solid;
+      }
+      
+      #leftbox {
+                float:left; 
+                width:33%;
+                height:300px;
+      }
+      #middlebox{
+                float:left; 
+                width:33%;
+                height:300px;
+        }
+        #rightbox{
+                float:right;
+                width:33%;
+                height:300px;
+        }
+        h1{
+                color:green;
+                text-align:center;
+        }
+     
+     
+      
+  </style>
+</head>
+<body>
+  
+  <h1> Bankruptcy Prediction </h1>
+  
+  
+  
+  
+    <div id = "boxes1">
+         
+              
+  <input type="text" id="box1" value="0.76575692"> Net Income to Total Assets <br/>
+  <input type="text" id="box2" value="0.48375491"> ROA(A) before interest and % after tax <br/>
+  <input type="text" id="box3" value="0.85276778"> Net worth/Assets  <br/>
+  <input type="text" id="box4" value="0.14723222">Debt ratio % <br/>
+  <input type="text" id="box5" value="0.1959913" >Persistent EPS in the Last Four Seasons <br/>
+  <input type="text" id="box6" value="0.92359286"> Retained Earnings to Total Assets <br/>
+  <input type="text" id="box7" value="0.15463389"> Net profit before tax/Paid-in capital <br/>
+  <input type="text" id="box8" value="0.15538149"> Per Share Net profit before tax (Yuan ¥)  <br/>
+  <input type="text" id="box9" value="0.08387606"> Current Liability to Assets <br/>
+  <input type="text" id="box10" value="0.83282768" > Working Capital to Total Assets <br/>
+  <input type="text" id="box11" value="0.83726051"> Net Income to Stockholder's Equity <br/>
+  <input type="text" id="box12" value="0.37504445"> Borrowing dependency  <br/>
+  <input type="text" id="box13" value="0.02294217"> Current Liability to Current Assets <br/>
+  <input type="text" id="box14" value="0.28133598" > Liability to Equity <br/>
+  <input type="text" id="box15" value="0.17285407"> Net Value Per Share (A) <br/>
+
+    </div> 
+      
+  <div>
+      <input style="background-color:yellow" type="button" value="Run" onclick="runExample()"/>
+   </div>
+  
+
+        <div id = "boxes2">
+              
+           
+              <h2>Inference </h2>
+              
+               <div id="predictions">
+               </div>
+              
+
+        </div>
+  
+
+</body>
+</html>
